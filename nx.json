@@ -1,0 +1,59 @@
+{
+  "npmScope": "my-angular8",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "angular8": {
+      "tags": []
+    },
+    "angular8-e2e": {
+      "tags": [],
+      "implicitDependencies": ["angular8"]
+    },
+    "mobile": {
+      "tags": []
+    },
+    "mobile-e2e": {
+      "tags": [],
+      "implicitDependencies": ["mobile"]
+    },
+    "web-app": {
+      "tags": []
+    },
+    "web": {
+      "tags": []
+    },
+    "web-e2e": {
+      "tags": [],
+      "implicitDependencies": ["web"]
+    },
+    "common-auth": {
+      "tags": []
+    },
+    "common-shared-auth": {
+      "tags": []
+    },
+    "common-auth-shared": {
+      "tags": []
+    },
+    "common-auth-state": {
+      "tags": []
+    }
+  }
+}

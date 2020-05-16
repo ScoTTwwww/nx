@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@my-angular8/web/app": ["libs/web/app/src/index.ts"],
+      "@my-angular8/common/auth/shared": [
+        "libs/common/auth/shared/src/index.ts"
+      ],
+      "@my-angular8/common/auth/state": ["libs/common/auth/state/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
